@@ -51,15 +51,19 @@
       <script>
         $("#continueBtn").click(()=>{
           var name = prompt("Por favor, informe seu nome.");
-          var link = "https://api.whatsapp.com/send?phone=551932344876&text=Olá,%20me%20chamo%20"+ name + ".%20Gostaria%20de%20ajuda%20para%20encontrar%20o%20colchão%20ideal%20para%20mim."
+          var city = prompt("Qual a sua cidade, " + name + " ?");
+          var link = "https://api.whatsapp.com/send?phone=551932344876&text=Olá,%20me%20chamo%20"+ name + " e sou de " + city + ".%20Gostaria%20de%20ajuda%20para%20encontrar%20o%20colchão%20ideal%20para%20mim.";
           window.location.href=link;       
         })
-      </script>    
+      </script>          
     </div>
-      <bottom class="fixed-bottom text-center text-white">
+    <div class="text-center" style="font-size: 30px;">
+      <a>Tire suas dúvidas com um de nossos <strong>especialistas.</strong> Aproveite, é grátis :)</a>
+    </div>
+      <bottom class="fixed-bottom text-center text-white animated bounce slower infinite">
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
       <a href="https://api.whatsapp.com/send?phone=551932344876&text=Olá,%20Gostaria%20de%20ajuda." class="float" target="_blank">
-      <i class="fa fa-whatsapp my-float"></i>
+      <i class="fa fa-whatsapp my-float "></i>
       </a>
     </bottom>
 </html>
